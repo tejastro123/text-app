@@ -1,0 +1,198 @@
+
+body {
+  background: white;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  color: #000000;
+}
+
+* {
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+.flex{
+  display: flex;
+  border-radius: 10px;
+  height: 70px;
+  width: 400px;
+  padding: 5px;
+}
+.button{
+  background-color: black;
+  width: 100px ;
+  height: 45px;
+  align-self: center;
+}
+.App-header {
+  background: red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.name {
+  color: red;
+  font-weight: bold;
+}
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.form-control:focus {
+  border-color: #ff4b5c;
+  box-shadow: 0 0 0 0.15rem rgba(255, 75, 92, 0.25);
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-label {
+  margin-left: 6px;
+  color: #555;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff4b5c, #ff7b72);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff3a4c, #ff6a63);
+  box-shadow: 0 6px 15px rgba(255, 75, 92, 0.3);
+}
+
+h1 {
+  margin-top: 30px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-text {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.navbar {
+  background: white !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #ff4b5c, #ff7b72);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #444 !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background: rgba(255, 75, 92, 0.1);
+  color: #ff4b5c !important;
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #ff4b5c, #ff7b72);
+  color: white !important;
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: none;
+  margin-top: 8px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  z-index: 1050;
+}
+
+.dropdown-menu.show {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  font-weight: 500;
+}
+
+
+.dropdown-item:hover {
+  background: rgba(255, 75, 92, 0.1);
+  color: #ff4b5c;
+}
+
+.form-control {
+  border-color: #ff4b5c;
+  align-items:flex-start;
+  box-shadow: 0 0 0 0.15rem rgba(255, 75, 92, 0.25);
+}
+
+.btn-outline-success {
+  color: #ff4b5c;
+  border-color: #ff4b5c;
+}
+
+.btn-outline-success:hover {
+  background-color: #ff4b5c;
+  color: white;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
